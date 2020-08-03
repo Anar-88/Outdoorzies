@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width" initial-scale=1>
+    <title>Outdoorzies</title>
+    <link href="https://fonts.googleapis.com/css2?family=Diplomata+SC&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  </head>
+   <body>
+     <div class="container">
+        <center>
+        <h1>Outdoorzies </h1>
+       <h2>Which National Park to visit next... </h2>
+        <form id="searchForm">
+            <label for="searchTerm">Find parks by using State abbreviations (e.g. CA for California) </label><br><br>
+            <input type="text" name="searchTerm" id="searchTerm" required style="font-size:18px">
+            <br><br>
+            <label for="maxResults"> Max results </label> <br>
+            <input type="number" name="maxResults" id="maxResults" value="10" min="0" style="font-size:18px">
+            <br><br>
+            <input type="submit" value="Go!" id="submit">
+        </form>
+       </center> 
+        <p id="errorMessage" class="error-message"></p>
+        <section id="results" class="hidden">
+          <h2 class="results">Results</h2>
+          <ul id="listItems">
+          </ul>
+        </section>
+    </div>
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
+
+     
